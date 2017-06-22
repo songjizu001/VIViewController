@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02407461680D2055C5C075D9 /* libPods-VIViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8BC6AEAD991AD88A9F2C26 /* libPods-VIViewControllerUITests.a */; };
+		2877F2F21EFBA7E0000B262D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F11EFBA7E0000B262D /* main.m */; };
+		2877F2F51EFBA7E0000B262D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F41EFBA7E0000B262D /* AppDelegate.m */; };
+		2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F71EFBA7E0000B262D /* ViewController.m */; };
+		2877F2FD1EFBA7E0000B262D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2877F2FC1EFBA7E0000B262D /* Assets.xcassets */; };
+		2877F30B1EFBA7E0000B262D /* VIViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F30A1EFBA7E0000B262D /* VIViewControllerUITests.m */; };
+		CA1BF06B734C1BCDB1565644 /* libPods-VIViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2877F3071EFBA7E0000B262D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2877F2E51EFBA7E0000B262D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2877F2EC1EFBA7E0000B262D;
+			remoteInfo = VIViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2877F2ED1EFBA7E0000B262D /* VIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2877F2F11EFBA7E0000B262D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2877F2F31EFBA7E0000B262D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2877F2F41EFBA7E0000B262D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2877F2F61EFBA7E0000B262D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2877F2F71EFBA7E0000B262D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2877F2FC1EFBA7E0000B262D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2877F3011EFBA7E0000B262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2877F3061EFBA7E0000B262D /* VIViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2877F30A1EFBA7E0000B262D /* VIViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIViewControllerUITests.m; sourceTree = "<group>"; };
+		2877F30C1EFBA7E0000B262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2877F3151EFBB067000B262D /* VIVPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIVPrefixHeader.pch; sourceTree = "<group>"; };
+		5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8BC6AEAD991AD88A9F2C26 /* libPods-VIViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB36E7C2DD68E9BF35C4F231 /* Pods-VIViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIViewControllerUITests/Pods-VIViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1ADF561FB15483D7DDBB519 /* Pods-VIViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIViewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIViewControllerUITests/Pods-VIViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA36DA578C6295F33139F004 /* Pods-VIViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIViewController/Pods-VIViewController.release.xcconfig"; sourceTree = "<group>"; };
+		DFB1E7449443A6BDEB74F8C7 /* Pods-VIViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIViewController/Pods-VIViewController.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2877F2EA1EFBA7E0000B262D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1BF06B734C1BCDB1565644 /* libPods-VIViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2877F3031EFBA7E0000B262D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02407461680D2055C5C075D9 /* libPods-VIViewControllerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10AE84EB5EF9625C9F3E7F75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFB1E7449443A6BDEB74F8C7 /* Pods-VIViewController.debug.xcconfig */,
+				CA36DA578C6295F33139F004 /* Pods-VIViewController.release.xcconfig */,
+				AB36E7C2DD68E9BF35C4F231 /* Pods-VIViewControllerUITests.debug.xcconfig */,
+				B1ADF561FB15483D7DDBB519 /* Pods-VIViewControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2877F2E41EFBA7E0000B262D = {
+			isa = PBXGroup;
+			children = (
+				2877F2EF1EFBA7E0000B262D /* VIViewController */,
+				2877F3091EFBA7E0000B262D /* VIViewControllerUITests */,
+				2877F2EE1EFBA7E0000B262D /* Products */,
+				10AE84EB5EF9625C9F3E7F75 /* Pods */,
+				6B3E37155FCF4251165E6685 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2877F2EE1EFBA7E0000B262D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2877F2ED1EFBA7E0000B262D /* VIViewController.app */,
+				2877F3061EFBA7E0000B262D /* VIViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2877F2EF1EFBA7E0000B262D /* VIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2877F2FC1EFBA7E0000B262D /* Assets.xcassets */,
+				2877F2F31EFBA7E0000B262D /* AppDelegate.h */,
+				2877F2F41EFBA7E0000B262D /* AppDelegate.m */,
+				2877F2F61EFBA7E0000B262D /* ViewController.h */,
+				2877F2F71EFBA7E0000B262D /* ViewController.m */,
+				2877F3011EFBA7E0000B262D /* Info.plist */,
+				2877F2F01EFBA7E0000B262D /* Supporting Files */,
+			);
+			path = VIViewController;
+			sourceTree = "<group>";
+		};
+		2877F2F01EFBA7E0000B262D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2877F2F11EFBA7E0000B262D /* main.m */,
+				2877F3151EFBB067000B262D /* VIVPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2877F3091EFBA7E0000B262D /* VIViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2877F30A1EFBA7E0000B262D /* VIViewControllerUITests.m */,
+				2877F30C1EFBA7E0000B262D /* Info.plist */,
+			);
+			path = VIViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		6B3E37155FCF4251165E6685 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */,
+				9D8BC6AEAD991AD88A9F2C26 /* libPods-VIViewControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2877F2EC1EFBA7E0000B262D /* VIViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2877F30F1EFBA7E0000B262D /* Build configuration list for PBXNativeTarget "VIViewController" */;
+			buildPhases = (
+				D0B0F964A558E9D8F0F6AA6D /* [CP] Check Pods Manifest.lock */,
+				2877F2E91EFBA7E0000B262D /* Sources */,
+				2877F2EA1EFBA7E0000B262D /* Frameworks */,
+				2877F2EB1EFBA7E0000B262D /* Resources */,
+				E246C6550CDB5D667A90DB8D /* [CP] Embed Pods Frameworks */,
+				C381B0329732C636568D512E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIViewController;
+			productName = VIViewController;
+			productReference = 2877F2ED1EFBA7E0000B262D /* VIViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2877F3051EFBA7E0000B262D /* VIViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2877F3121EFBA7E0000B262D /* Build configuration list for PBXNativeTarget "VIViewControllerUITests" */;
+			buildPhases = (
+				893D4F07A18BC25434E72D38 /* [CP] Check Pods Manifest.lock */,
+				2877F3021EFBA7E0000B262D /* Sources */,
+				2877F3031EFBA7E0000B262D /* Frameworks */,
+				2877F3041EFBA7E0000B262D /* Resources */,
+				C4C6DB453E7B6E344962E0DF /* [CP] Embed Pods Frameworks */,
+				61D5B1AD3E3480A6A539BD8F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2877F3081EFBA7E0000B262D /* PBXTargetDependency */,
+			);
+			name = VIViewControllerUITests;
+			productName = VIViewControllerUITests;
+			productReference = 2877F3061EFBA7E0000B262D /* VIViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2877F2E51EFBA7E0000B262D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jizu Song";
+				TargetAttributes = {
+					2877F2EC1EFBA7E0000B262D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8SLVXCM3TG;
+						ProvisioningStyle = Manual;
+					};
+					2877F3051EFBA7E0000B262D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2877F2EC1EFBA7E0000B262D;
+					};
+				};
+			};
+			buildConfigurationList = 2877F2E81EFBA7E0000B262D /* Build configuration list for PBXProject "VIViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2877F2E41EFBA7E0000B262D;
+			productRefGroup = 2877F2EE1EFBA7E0000B262D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2877F2EC1EFBA7E0000B262D /* VIViewController */,
+				2877F3051EFBA7E0000B262D /* VIViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2877F2EB1EFBA7E0000B262D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F2FD1EFBA7E0000B262D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2877F3041EFBA7E0000B262D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61D5B1AD3E3480A6A539BD8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIViewControllerUITests/Pods-VIViewControllerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893D4F07A18BC25434E72D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C381B0329732C636568D512E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIViewController/Pods-VIViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C6DB453E7B6E344962E0DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIViewControllerUITests/Pods-VIViewControllerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0B0F964A558E9D8F0F6AA6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E246C6550CDB5D667A90DB8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIViewController/Pods-VIViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2877F2E91EFBA7E0000B262D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */,
+				2877F2F51EFBA7E0000B262D /* AppDelegate.m in Sources */,
+				2877F2F21EFBA7E0000B262D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2877F3021EFBA7E0000B262D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F30B1EFBA7E0000B262D /* VIViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2877F3081EFBA7E0000B262D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2877F2EC1EFBA7E0000B262D /* VIViewController */;
+			targetProxy = 2877F3071EFBA7E0000B262D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2877F30D1EFBA7E0000B262D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2877F30E1EFBA7E0000B262D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2877F3101EFBA7E0000B262D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFB1E7449443A6BDEB74F8C7 /* Pods-VIViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8SLVXCM3TG;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VIViewController/VIVPrefixHeader.pch";
+				INFOPLIST_FILE = VIViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VIViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6ca6e3e-dc6e-424b-af04-6513ff275401";
+				PROVISIONING_PROFILE_SPECIFIER = "team*";
+			};
+			name = Debug;
+		};
+		2877F3111EFBA7E0000B262D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA36DA578C6295F33139F004 /* Pods-VIViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VIViewController/VIVPrefixHeader.pch";
+				INFOPLIST_FILE = VIViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VIViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		2877F3131EFBA7E0000B262D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB36E7C2DD68E9BF35C4F231 /* Pods-VIViewControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VIViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fengniao.com.VIViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VIViewController;
+			};
+			name = Debug;
+		};
+		2877F3141EFBA7E0000B262D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1ADF561FB15483D7DDBB519 /* Pods-VIViewControllerUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VIViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fengniao.com.VIViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VIViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2877F2E81EFBA7E0000B262D /* Build configuration list for PBXProject "VIViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2877F30D1EFBA7E0000B262D /* Debug */,
+				2877F30E1EFBA7E0000B262D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2877F30F1EFBA7E0000B262D /* Build configuration list for PBXNativeTarget "VIViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2877F3101EFBA7E0000B262D /* Debug */,
+				2877F3111EFBA7E0000B262D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2877F3121EFBA7E0000B262D /* Build configuration list for PBXNativeTarget "VIViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2877F3131EFBA7E0000B262D /* Debug */,
+				2877F3141EFBA7E0000B262D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2877F2E51EFBA7E0000B262D /* Project object */;
+}

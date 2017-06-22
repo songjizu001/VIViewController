@@ -1,0 +1,15 @@
+
+inhibit_all_warnings!
+
+target 'VIViewController' do
+pod 'YYKit', '~> 1.0.9'
+pod 'MJExtension', '~> 3.0.13'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'Masonry'
+pod 'SDWebImage', '~> 4.0.0'
+pod "AFNetworking", "~> 2.5.4"
+end
+
+target 'VIViewControllerUITests' do
+
+end
