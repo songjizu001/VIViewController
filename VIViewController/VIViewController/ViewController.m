@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PreViewController.h"
 
 @interface ViewController ()
 
@@ -39,7 +40,8 @@
 
 - (void)preButtonAction:(UIButton *)sender{
     
-    
+    PreViewController * preVC = [[PreViewController alloc] init];
+    [self.navigationController pushViewController:preVC animated:YES];
 }
 
 

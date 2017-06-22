@@ -13,6 +13,7 @@
 		2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F71EFBA7E0000B262D /* ViewController.m */; };
 		2877F2FD1EFBA7E0000B262D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2877F2FC1EFBA7E0000B262D /* Assets.xcassets */; };
 		2877F30B1EFBA7E0000B262D /* VIViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F30A1EFBA7E0000B262D /* VIViewControllerUITests.m */; };
+		2877F31B1EFBCEA7000B262D /* PreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F31A1EFBCEA7000B262D /* PreViewController.m */; };
 		CA1BF06B734C1BCDB1565644 /* libPods-VIViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,8 @@
 		2877F30A1EFBA7E0000B262D /* VIViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIViewControllerUITests.m; sourceTree = "<group>"; };
 		2877F30C1EFBA7E0000B262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2877F3151EFBB067000B262D /* VIVPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIVPrefixHeader.pch; sourceTree = "<group>"; };
+		2877F3191EFBCEA7000B262D /* PreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreViewController.h; sourceTree = "<group>"; };
+		2877F31A1EFBCEA7000B262D /* PreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreViewController.m; sourceTree = "<group>"; };
 		5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8BC6AEAD991AD88A9F2C26 /* libPods-VIViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB36E7C2DD68E9BF35C4F231 /* Pods-VIViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIViewControllerUITests/Pods-VIViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +109,9 @@
 				2877F2F41EFBA7E0000B262D /* AppDelegate.m */,
 				2877F2F61EFBA7E0000B262D /* ViewController.h */,
 				2877F2F71EFBA7E0000B262D /* ViewController.m */,
-				2877F3011EFBA7E0000B262D /* Info.plist */,
+				2877F3171EFBCE7B000B262D /* Lib */,
+				2877F3161EFBCE7B000B262D /* DemoViewController */,
+				2877F3181EFBCE7B000B262D /* PreViewController */,
 				2877F2F01EFBA7E0000B262D /* Supporting Files */,
 			);
 			path = VIViewController;
@@ -115,6 +120,7 @@
 		2877F2F01EFBA7E0000B262D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2877F3011EFBA7E0000B262D /* Info.plist */,
 				2877F2F11EFBA7E0000B262D /* main.m */,
 				2877F3151EFBB067000B262D /* VIVPrefixHeader.pch */,
 			);
@@ -128,6 +134,29 @@
 				2877F30C1EFBA7E0000B262D /* Info.plist */,
 			);
 			path = VIViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		2877F3161EFBCE7B000B262D /* DemoViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DemoViewController;
+			sourceTree = "<group>";
+		};
+		2877F3171EFBCE7B000B262D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		2877F3181EFBCE7B000B262D /* PreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2877F3191EFBCEA7000B262D /* PreViewController.h */,
+				2877F31A1EFBCEA7000B262D /* PreViewController.m */,
+			);
+			path = PreViewController;
 			sourceTree = "<group>";
 		};
 		6B3E37155FCF4251165E6685 /* Frameworks */ = {
@@ -339,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2877F31B1EFBCEA7000B262D /* PreViewController.m in Sources */,
 				2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */,
 				2877F2F51EFBA7E0000B262D /* AppDelegate.m in Sources */,
 				2877F2F21EFBA7E0000B262D /* main.m in Sources */,
