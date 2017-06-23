@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		02407461680D2055C5C075D9 /* libPods-VIViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8BC6AEAD991AD88A9F2C26 /* libPods-VIViewControllerUITests.a */; };
+		283AA3F81EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA3F71EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.m */; };
+		283AA4001EFCB4CE006F34BC /* VIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA3FF1EFCB4CE006F34BC /* VIViewController.m */; };
+		283AA4071EFCB524006F34BC /* Content_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA4021EFCB524006F34BC /* Content_Cell.m */; };
+		283AA4081EFCB524006F34BC /* GestureTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA4041EFCB524006F34BC /* GestureTableView.m */; };
+		283AA4091EFCB524006F34BC /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA4061EFCB524006F34BC /* HeadView.m */; };
+		283AA40C1EFCB53B006F34BC /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA40B1EFCB53B006F34BC /* ContentController.m */; };
+		283AA40F1EFCB5C3006F34BC /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AA40E1EFCB5C3006F34BC /* DemoController.m */; };
 		2877F2F21EFBA7E0000B262D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F11EFBA7E0000B262D /* main.m */; };
 		2877F2F51EFBA7E0000B262D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F41EFBA7E0000B262D /* AppDelegate.m */; };
 		2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F2F71EFBA7E0000B262D /* ViewController.m */; };
@@ -28,6 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		283AA3F61EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		283AA3F71EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		283AA3FE1EFCB4CE006F34BC /* VIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIViewController.h; sourceTree = "<group>"; };
+		283AA3FF1EFCB4CE006F34BC /* VIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIViewController.m; sourceTree = "<group>"; };
+		283AA4011EFCB524006F34BC /* Content_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content_Cell.h; sourceTree = "<group>"; };
+		283AA4021EFCB524006F34BC /* Content_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content_Cell.m; sourceTree = "<group>"; };
+		283AA4031EFCB524006F34BC /* GestureTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTableView.h; sourceTree = "<group>"; };
+		283AA4041EFCB524006F34BC /* GestureTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTableView.m; sourceTree = "<group>"; };
+		283AA4051EFCB524006F34BC /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		283AA4061EFCB524006F34BC /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		283AA40A1EFCB53B006F34BC /* ContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentController.h; sourceTree = "<group>"; };
+		283AA40B1EFCB53B006F34BC /* ContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentController.m; sourceTree = "<group>"; };
+		283AA40D1EFCB5C3006F34BC /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
+		283AA40E1EFCB5C3006F34BC /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
 		2877F2ED1EFBA7E0000B262D /* VIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2877F2F11EFBA7E0000B262D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2877F2F31EFBA7E0000B262D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +102,64 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		283AA3F51EFCB38E006F34BC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				283AA3F61EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.h */,
+				283AA3F71EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		283AA3F91EFCB473006F34BC /* ViViewController */ = {
+			isa = PBXGroup;
+			children = (
+				283AA3FA1EFCB473006F34BC /* Controller */,
+				283AA3FB1EFCB473006F34BC /* Model */,
+				283AA3FC1EFCB473006F34BC /* Tool */,
+				283AA3FD1EFCB473006F34BC /* View */,
+			);
+			path = ViViewController;
+			sourceTree = "<group>";
+		};
+		283AA3FA1EFCB473006F34BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				283AA3FE1EFCB4CE006F34BC /* VIViewController.h */,
+				283AA3FF1EFCB4CE006F34BC /* VIViewController.m */,
+				283AA40A1EFCB53B006F34BC /* ContentController.h */,
+				283AA40B1EFCB53B006F34BC /* ContentController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		283AA3FB1EFCB473006F34BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		283AA3FC1EFCB473006F34BC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		283AA3FD1EFCB473006F34BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				283AA4011EFCB524006F34BC /* Content_Cell.h */,
+				283AA4021EFCB524006F34BC /* Content_Cell.m */,
+				283AA4031EFCB524006F34BC /* GestureTableView.h */,
+				283AA4041EFCB524006F34BC /* GestureTableView.m */,
+				283AA4051EFCB524006F34BC /* HeadView.h */,
+				283AA4061EFCB524006F34BC /* HeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2877F2E41EFBA7E0000B262D = {
 			isa = PBXGroup;
 			children = (
@@ -104,14 +183,15 @@
 		2877F2EF1EFBA7E0000B262D /* VIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2877F3171EFBCE7B000B262D /* Lib */,
 				2877F2FC1EFBA7E0000B262D /* Assets.xcassets */,
 				2877F2F31EFBA7E0000B262D /* AppDelegate.h */,
 				2877F2F41EFBA7E0000B262D /* AppDelegate.m */,
 				2877F2F61EFBA7E0000B262D /* ViewController.h */,
 				2877F2F71EFBA7E0000B262D /* ViewController.m */,
-				2877F3171EFBCE7B000B262D /* Lib */,
-				2877F3161EFBCE7B000B262D /* DemoViewController */,
-				2877F3181EFBCE7B000B262D /* PreViewController */,
+				2877F3161EFBCE7B000B262D /* DemoViewController(演示) */,
+				283AA3F91EFCB473006F34BC /* ViViewController */,
+				2877F3181EFBCE7B000B262D /* PreViewController（效果图） */,
 				2877F2F01EFBA7E0000B262D /* Supporting Files */,
 			);
 			path = VIViewController;
@@ -136,26 +216,31 @@
 			path = VIViewControllerUITests;
 			sourceTree = "<group>";
 		};
-		2877F3161EFBCE7B000B262D /* DemoViewController */ = {
+		2877F3161EFBCE7B000B262D /* DemoViewController(演示) */ = {
 			isa = PBXGroup;
 			children = (
+				283AA40D1EFCB5C3006F34BC /* DemoController.h */,
+				283AA40E1EFCB5C3006F34BC /* DemoController.m */,
 			);
+			name = "DemoViewController(演示)";
 			path = DemoViewController;
 			sourceTree = "<group>";
 		};
 		2877F3171EFBCE7B000B262D /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				283AA3F51EFCB38E006F34BC /* Categories */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		2877F3181EFBCE7B000B262D /* PreViewController */ = {
+		2877F3181EFBCE7B000B262D /* PreViewController（效果图） */ = {
 			isa = PBXGroup;
 			children = (
 				2877F3191EFBCEA7000B262D /* PreViewController.h */,
 				2877F31A1EFBCEA7000B262D /* PreViewController.m */,
 			);
+			name = "PreViewController（效果图）";
 			path = PreViewController;
 			sourceTree = "<group>";
 		};
@@ -368,10 +453,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283AA4071EFCB524006F34BC /* Content_Cell.m in Sources */,
+				283AA3F81EFCB39D006F34BC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				283AA4001EFCB4CE006F34BC /* VIViewController.m in Sources */,
 				2877F31B1EFBCEA7000B262D /* PreViewController.m in Sources */,
 				2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */,
+				283AA4091EFCB524006F34BC /* HeadView.m in Sources */,
 				2877F2F51EFBA7E0000B262D /* AppDelegate.m in Sources */,
+				283AA40C1EFCB53B006F34BC /* ContentController.m in Sources */,
+				283AA40F1EFCB5C3006F34BC /* DemoController.m in Sources */,
 				2877F2F21EFBA7E0000B262D /* main.m in Sources */,
+				283AA4081EFCB524006F34BC /* GestureTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

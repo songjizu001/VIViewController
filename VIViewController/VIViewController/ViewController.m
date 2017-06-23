@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PreViewController.h"
+#import "DemoController.h"
 
 @interface ViewController ()
 
@@ -37,19 +38,19 @@
 
 }
 
-
 - (void)preButtonAction:(UIButton *)sender{
     
     PreViewController * preVC = [[PreViewController alloc] init];
+    
     [self.navigationController pushViewController:preVC animated:YES];
 }
 
-
 - (void)demoButtonAction:(UIButton *)sender{
     
+    DemoController * demoVC =[[DemoController alloc] init];
     
+    [self.navigationController pushViewController:demoVC animated:YES];
 }
-
 
 - (UILabel *)label{
     
