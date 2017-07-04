@@ -29,6 +29,8 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.title = @"聚合";
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 
     [self.view addSubview:self.label];
     

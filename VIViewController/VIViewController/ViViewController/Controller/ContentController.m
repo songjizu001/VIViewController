@@ -18,10 +18,14 @@ NSString *kContenVCListStatusChangedNotification = @"kNetworkStatusChangedNotifi
 @implementation ContentController
 
 - (instancetype)initWithTitle:(NSString *)title{
+   
     self = [super init];
+    
     if (self) {
+    
         self.title = title;
     }
+    
     return self;
 }
 
@@ -83,12 +87,12 @@ NSString *kContenVCListStatusChangedNotification = @"kNetworkStatusChangedNotifi
 
 #pragma mark UIScrollView 判断屏幕触碰状态
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-//    NSLog(@"接触屏幕");
+    NSLog(@"接触屏幕");
     self.fingerIsTouch = YES;
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
-//    NSLog(@"离开屏幕");
+    NSLog(@"离开屏幕");
     self.fingerIsTouch = NO;
 }
 

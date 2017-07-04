@@ -15,4 +15,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 
 - (instancetype)initWithTitle:(NSString *)title;
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end

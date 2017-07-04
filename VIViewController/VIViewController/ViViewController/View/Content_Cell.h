@@ -11,14 +11,19 @@
 @protocol Content_CellDelegate <NSObject>
 
 @optional
+
+/**
+ *  内部的Collection即将要滚动
+ */
+- (void)content_CellCollectionViewWillBeginDragging:(UIScrollView *)scrollView;
 /**
  *  内部的Collection正在滚动
  */
-- (void)content_CellCollectionViewDidScroll;
+- (void)content_CellCollectionViewDidScroll:(UIScrollView *)scrollView;
 /**
  *  内部的Collection滚动结束
  */
-- (void)content_CellCollectionViewDidEndDecelerating;
+- (void)content_CellCollectionViewDidEndDecelerating:(UIScrollView *)scrollView;
 
 @end
 
@@ -32,9 +37,9 @@
 @property (nonatomic, weak) UIViewController *parentVC;
 
 /**
- *  各个控制器的 class, 例如:[UITableViewController class]
+ *  各个控制器的 子视图数组
  */
-@property (nonatomic, copy) NSArray<Class> *viewControllerClasses;
+@property (nonatomic, strong) NSArray *childsVCs;
 
 /**
  *  Cell 是否可以滚动
@@ -46,5 +51,9 @@
  */
 @property (nonatomic, assign) NSInteger contentViewCurrentIndex;
 
+/**
+ *  设置cell中的页面滚动范围
+ */
+- (void)cellContentCollectOffset:(CGPoint)contentOffset animated:(BOOL)animated;
 
 @end

@@ -9,4 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GestureTableView : UITableView<UIGestureRecognizerDelegate>
+
+@property(nonatomic,assign)BOOL shouldRecognize;
+
 @end

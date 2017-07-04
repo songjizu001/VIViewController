@@ -15,8 +15,6 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
-@property (nonatomic, strong) NSMutableArray *childsVCs;//子视图数组
-
 @property (nonatomic, assign) BOOL  isClickMemuButton;//collectionView的滚动是否是因为点击了按钮滚动的
 
 @end
@@ -31,7 +29,7 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
         
         self.isClickMemuButton = NO;
         
-        [self.contentView setBackgroundColor:[[UIColor orangeColor] colorWithAlphaComponent:0.5]];
+        [self.contentView setBackgroundColor:[UIColor whiteColor]];
         
         [self.contentView addSubview:self.collectionView];
 
@@ -46,19 +44,9 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
     self.collectionView.frame = self.contentView.bounds;
 }
 
--(void)setViewControllerClasses:(NSArray<Class> *)viewControllerClasses{
+-(void)setChildsVCs:(NSArray *)childsVCs{
    
-    _viewControllerClasses = viewControllerClasses;
-    
-    [self.childsVCs removeAllObjects];
-
-    
-    for (int i = 0; i < _viewControllerClasses.count; i ++) {
-        
-        UIViewController * vc = [[_viewControllerClasses[i] alloc] init];
-        
-        [self.childsVCs addObject:vc];
-    }
+    _childsVCs = childsVCs;
     
     [self.collectionView reloadData];
 }
@@ -88,23 +76,26 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     
     self.isClickMemuButton = NO;
+    if (self.delegate && [self.delegate respondsToSelector:@selector(content_CellCollectionViewWillBeginDragging:)]) {
+        [self.delegate content_CellCollectionViewWillBeginDragging:scrollView];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     if (self.isClickMemuButton) {return;}
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(content_CellCollectionViewDidScroll)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(content_CellCollectionViewDidScroll:)]) {
       
-        [self.delegate content_CellCollectionViewDidScroll];
+        [self.delegate content_CellCollectionViewDidScroll:scrollView];
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(content_CellCollectionViewDidEndDecelerating)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(content_CellCollectionViewDidEndDecelerating:)]) {
         
-        [self.delegate content_CellCollectionViewDidEndDecelerating];
+        [self.delegate content_CellCollectionViewDidEndDecelerating:scrollView];
     }
 }
 
@@ -123,6 +114,11 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
     }
 }
 
+- (void)cellContentCollectOffset:(CGPoint)contentOffset animated:(BOOL)animated{
+
+    [self.collectionView setContentOffset:contentOffset animated:animated];
+}
+
 - (UICollectionView *)collectionView{
    
     if (!_collectionView) {
@@ -138,18 +134,10 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
         _collectionView.bounces = YES;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        _collectionView.backgroundColor =[UIColor orangeColor];
+        _collectionView.backgroundColor =[UIColor whiteColor];
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
     }
     return _collectionView;
-}
-
-- (NSMutableArray *)childsVCs{
-   
-    if (!_childsVCs) {
-        _childsVCs = [NSMutableArray array];
-    }
-    return _childsVCs;
 }
 
 - (void)setContentViewCurrentIndex:(NSInteger)contentViewCurrentIndex{
