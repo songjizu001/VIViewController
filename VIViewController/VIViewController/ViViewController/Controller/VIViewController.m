@@ -73,12 +73,16 @@ static NSString *CellIdentifier = @"UITableViewCell";
     
     [super viewWillDisappear:animated];
 
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+
     self.tableView.shouldRecognize = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
   
     [super viewWillAppear:animated];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     self.tableView.shouldRecognize = YES;
 }
@@ -212,6 +216,8 @@ static NSString *CellIdentifier = @"UITableViewCell";
     CGFloat offset_Y = scrollView.contentOffset.y;
     CGFloat alpha = offset_Y/(250 - 64 - 40);
     self.navBar.alpha = alpha;
+    
+    [UIApplication sharedApplication].statusBarStyle = (self.navBar.alpha > 0.6 )?UIStatusBarStyleDefault:UIStatusBarStyleLightContent;
 }
 
 

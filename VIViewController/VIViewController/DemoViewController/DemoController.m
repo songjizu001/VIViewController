@@ -37,7 +37,6 @@
         strongSelf.menuItemCorlorSel = UIColorFromHex(0x888888);
         strongSelf.menuTitleSize = 15;
         [strongSelf reloadData];
-        
     });
 }
 
