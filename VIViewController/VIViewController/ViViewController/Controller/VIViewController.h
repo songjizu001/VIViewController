@@ -53,5 +53,13 @@
  * 该方法用于重置刷新父控制器  同时刷新headView中的MemuIterm 
  */
 - (void)reloadData;
+/**
+ * 开始加载动画
+ */
+- (void)startLoading;
+/**
+ * 停止加载动画
+ */
+- (void)stopLoading;
 
 @end

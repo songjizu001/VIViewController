@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C71A38C999B19169CEB5EC96B5C2A261'
+               BlueprintIdentifier = 'BF9F8DC032BC02DBC98382CDBFFD923C'
                BlueprintName = 'Pods-VIViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-VIViewController.a'>

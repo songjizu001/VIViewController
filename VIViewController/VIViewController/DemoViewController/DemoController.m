@@ -22,9 +22,10 @@
   
     __weak typeof(self)weakSelf = self;
     
+    [self startLoading];
     
     //模拟数据请求
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
        
         __strong typeof(weakSelf)strongSelf = weakSelf;
        
@@ -37,6 +38,9 @@
         strongSelf.menuItemCorlorSel = UIColorFromHex(0x888888);
         strongSelf.menuTitleSize = 15;
         [strongSelf reloadData];
+        
+        [strongSelf stopLoading];
+
     });
 }
 

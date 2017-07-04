@@ -109,7 +109,7 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
         
         if (!cellCanScroll) {
             //如果cell不能滑动，代表到了顶部，修改所有子vc的状态回到顶部
-            VC.tableView.contentOffset = CGPointZero;
+            [VC.tableView setContentOffset:CGPointZero];
         }
     }
 }

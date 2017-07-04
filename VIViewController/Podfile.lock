@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - lottie-ios (1.5.1)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
@@ -32,6 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
+  - lottie-ios
   - Masonry
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.12)
@@ -40,12 +42,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 25cdb4bbaf034ca515173c1db8bb6e8d0bb2eb9c
+PODFILE CHECKSUM: 24b440f2b71b9b9a89bdbd0181daa45ab2c74359
 
 COCOAPODS: 1.2.0

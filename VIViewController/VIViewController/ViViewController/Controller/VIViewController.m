@@ -10,6 +10,7 @@
 #import "GestureTableView.h"
 #import "HeadView.h"
 #import "Content_Cell.h"
+#import "LoadingView.h"
 
 static NSString *CellIdentifier = @"UITableViewCell";
 
@@ -28,6 +29,8 @@ static NSString *CellIdentifier = @"UITableViewCell";
 @property (nonatomic,strong)  UIToolbar         * navBar;     //导航套
 @property (nonatomic,strong)  Content_Cell      * cell;
 @property (nonatomic, strong) NSMutableArray    * childsVCs;//子视图数组
+
+@property (nonatomic, strong) LoadingView       * loadingView;
 
 @end
 
@@ -67,6 +70,8 @@ static NSString *CellIdentifier = @"UITableViewCell";
     _viewWidth = self.view.frame.size.width;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeScrollStatus) name:kContenVCListStatusChangedNotification object:nil];
+    
+    [self.view addSubview:self.loadingView];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -93,6 +98,7 @@ static NSString *CellIdentifier = @"UITableViewCell";
     self.canScroll = YES;
     
     self.cell.cellCanScroll = NO;
+    
 }
 
 #pragma mark - Table view data source
@@ -245,6 +251,16 @@ static NSString *CellIdentifier = @"UITableViewCell";
 }
 
 
+- (void)startLoading{
+
+    [self.loadingView _loadAnimationNamed:@"video_cam"];
+}
+
+- (void)stopLoading{
+    [self.loadingView stop];
+}
+
+
 #pragma mark LazyLoad
 - (GestureTableView *)tableView{
     
@@ -295,6 +311,20 @@ static NSString *CellIdentifier = @"UITableViewCell";
     }
     return _childsVCs;
 }
+
+-(LoadingView *)loadingView{
+    
+    if (!_loadingView) {
+        _loadingView = [[LoadingView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+        __weak typeof(self)weakSelf = self;
+        _loadingView.block = ^{
+            __strong typeof(weakSelf)strongSelf = weakSelf;
+            [strongSelf.navigationController popViewControllerAnimated:YES];
+        };
+    }
+    return _loadingView;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

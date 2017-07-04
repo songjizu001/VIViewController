@@ -27,6 +27,8 @@
 		2877F31B1EFBCEA7000B262D /* PreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877F31A1EFBCEA7000B262D /* PreViewController.m */; };
 		28C20B401F0B68AF005DD7B5 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C20B3F1F0B68AF005DD7B5 /* CustomViewController.m */; };
 		28C20B431F0B69B4005DD7B5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C20B421F0B69B4005DD7B5 /* DetailViewController.m */; };
+		28C20B471F0B7B5D005DD7B5 /* video_cam.json in Resources */ = {isa = PBXBuildFile; fileRef = 28C20B461F0B7B5D005DD7B5 /* video_cam.json */; };
+		28C20B4A1F0B7BCF005DD7B5 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C20B491F0B7BCF005DD7B5 /* LoadingView.m */; };
 		CA1BF06B734C1BCDB1565644 /* libPods-VIViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,9 @@
 		28C20B3F1F0B68AF005DD7B5 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		28C20B411F0B69B4005DD7B5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		28C20B421F0B69B4005DD7B5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		28C20B461F0B7B5D005DD7B5 /* video_cam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video_cam.json; sourceTree = "<group>"; };
+		28C20B481F0B7BCF005DD7B5 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		28C20B491F0B7BCF005DD7B5 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		5659DDAFEC789135463E0C66 /* libPods-VIViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8BC6AEAD991AD88A9F2C26 /* libPods-VIViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB36E7C2DD68E9BF35C4F231 /* Pods-VIViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIViewControllerUITests/Pods-VIViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +166,8 @@
 		283AA3FC1EFCB473006F34BC /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				28C20B481F0B7BCF005DD7B5 /* LoadingView.h */,
+				28C20B491F0B7BCF005DD7B5 /* LoadingView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 		2877F2F01EFBA7E0000B262D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28C20B461F0B7B5D005DD7B5 /* video_cam.json */,
 				2877F3011EFBA7E0000B262D /* Info.plist */,
 				2877F2F11EFBA7E0000B262D /* main.m */,
 				2877F3151EFBB067000B262D /* VIVPrefixHeader.pch */,
@@ -381,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2877F2FD1EFBA7E0000B262D /* Assets.xcassets in Resources */,
+				28C20B471F0B7B5D005DD7B5 /* video_cam.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +507,7 @@
 				283AA4001EFCB4CE006F34BC /* VIViewController.m in Sources */,
 				283AA41C1EFCBFF4006F34BC /* WMScrollView.m in Sources */,
 				2877F31B1EFBCEA7000B262D /* PreViewController.m in Sources */,
+				28C20B4A1F0B7BCF005DD7B5 /* LoadingView.m in Sources */,
 				283AA41B1EFCBFF4006F34BC /* WMProgressView.m in Sources */,
 				2877F2F81EFBA7E0000B262D /* ViewController.m in Sources */,
 				283AA4091EFCB524006F34BC /* HeadView.m in Sources */,
