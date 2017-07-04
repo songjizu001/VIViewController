@@ -98,7 +98,6 @@ static NSString *CellIdentifier = @"UITableViewCell";
     self.canScroll = YES;
     
     self.cell.cellCanScroll = NO;
-    
 }
 
 #pragma mark - Table view data source
@@ -115,11 +114,13 @@ static NSString *CellIdentifier = @"UITableViewCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    Content_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    self.cell = cell;
-    cell.childsVCs = self.childsVCs;
-    cell.delegate = self;
-    return cell;
+    _cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!_cell) {
+        _cell = [[Content_Cell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    _cell.childsVCs = self.childsVCs;
+    _cell.delegate = self;
+    return _cell;
 }
 
 - (void)content_CellCollectionViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -269,7 +270,6 @@ static NSString *CellIdentifier = @"UITableViewCell";
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.bounces = YES;
-        [_tableView registerClass:[Content_Cell class] forCellReuseIdentifier:CellIdentifier];
     }
     return _tableView;
 }
